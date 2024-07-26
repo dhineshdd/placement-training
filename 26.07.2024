@@ -1,0 +1,120 @@
+1.(+,-,*,/)
+a = 10
+b = 5
+print("Addition:", a + b)
+print("Subtraction:", a - b)
+print("Multiplication:", a * b)
+print("Division:", a / b)
+
+2.odd or even
+num = int(input("Enter a number: "))
+if num % 2 == 0:
+    print(num, "is even")
+else:
+    print(num, "is odd")
+
+
+3.largest num
+a = int(input("Enter first number: "))
+b = int(input("Enter second number: "))
+c = int(input("Enter third number: "))
+largest = max(a, b, c)
+print("The largest number is", largest)
+
+
+4.use def function 
+def add(x, y):
+    return x + y
+
+def subtract(x, y):
+    return x - y
+
+def multiply(x, y):
+    return x * y
+
+def divide(x, y):
+    return x / y
+
+print("Select operation:")
+print("1. Add")
+print("2. Subtract")
+print("3. Multiply")
+print("4. Divide")
+
+choice = input("Enter choice(1/2/3/4): ")
+
+num1 = float(input("Enter first number: "))
+num2 = float(input("Enter second number: "))
+
+if choice == '1':
+    print("Result:", add(num1, num2))
+elif choice == '2':
+    print("Result:", subtract(num1, num2))
+elif choice == '3':
+    print("Result:", multiply(num1, num2))
+elif choice == '4':
+    print("Result:", divide(num1, num2))
+else:
+    print("Invalid Input")
+
+
+5.use math function 
+import math
+num = int(input("Enter a number: "))
+print("Factorial of", num, "is", math.factorial(num))
+
+
+6.fibonacci 
+n = int(input("Enter the number of terms: "))
+a, b = 0, 1
+print("Fibonacci sequence:")
+for _ in range(n):
+    print(a, end=" ")
+    a, b = b, a + b
+print()
+
+
+7.prime num
+num = int(input("Enter a number: "))
+if num > 1:
+    for i in range(2, num):
+        if num % i == 0:
+            print(num, "is not a prime number")
+            break
+    else:
+        print(num, "is a prime number")
+else:
+    print(num, "is not a prime number")
+
+
+8.reversed string 
+string = input("Enter a string: ")
+reversed_string = string[::-1]
+print("Reversed string:", reversed_string)
+
+
+9.vowels
+string = input("Enter a string: ")
+vowels = "aeiou"
+count = sum(1 for char in string if char.lower() in vowels)
+print("Number of vowels:", count)
+
+
+10.natural num
+n = int(input("Enter a number: "))
+total = sum(range(1, n + 1))
+print("Sum of natural numbers up to", n, "is", total)
+
+
+11.palindrome
+string = input("Enter a string: ")
+if string == string[::-1]:
+    print(string, "is a palindrome")
+else:
+    print(string, "is not a palindrome")
+
+
+12.num of given words 
+sentence = input("Enter a sentence: ")
+words = sentence.split()
+print("Number of words:", len(words))
