@@ -1,0 +1,122 @@
+
+
+1. _Simple if-else_
+
+x = 5
+if x > 10:
+    print("x is greater than 10")
+else:
+    print("x is less than or equal to 10")
+
+
+2. _Even-Odd Check_
+
+num = 7
+if num % 2 == 0:
+    print("Number is even")
+else:
+    print("Number is odd")
+
+
+3. _Grade Checker_
+
+marks = 85
+if marks >= 90:
+    print("Grade: A")
+elif marks >= 80:
+    print("Grade: B")
+else:
+    print("Grade: C")
+
+
+4._Age Checker_
+
+age = 25
+if age >= 18:
+    print("You are an adult")
+else:
+    print("You are a minor")
+
+
+5._Simple Calculator_
+
+num1 = 10
+num2 = 5
+operator = input("Enter operator (+, -, *, /): ")
+if operator == "+":
+    print(num1 + num2)
+elif operator == "-":
+    print(num1 - num2)
+elif operator == "*":
+    print(num1 * num2)
+elif operator == "/":
+    if num2 != 0:
+        print(num1 / num2)
+    else:
+        print("Error! Division by zero.")
+else:
+    print("Invalid operator")
+
+
+6. _Leap Year Checker_
+
+year = 2024
+if year % 4 == 0:
+    print("Leap year")
+else:
+    print("Not a leap year")
+
+
+7. _Positive-Negative Check_
+
+num = -5
+if num > 0:
+    print("Number is positive")
+else:
+    print("Number is negative or zero")
+
+
+8. _Simple Rock-Paper-Scissors_
+
+user = input("Enter your choice (rock, paper, scissors): ")
+computer = "rock"
+if user == computer:
+    print("Tie!")
+elif (user == "rock" and computer == "scissors") or \
+     (user == "paper" and computer == "rock") or \
+     (user == "scissors" and computer == "paper"):
+    print("You win!")
+else:
+    print("Computer wins!")
+
+
+9. _Simple Chatbot_
+
+user_input = input("You: ")
+if user_input.lower() == "hello":
+    print("Bot: Hello!")
+elif user_input.lower() == "bye":
+    print("Bot: Goodbye!")
+else:
+    print("Bot: I didn't understand that.")
+
+
+10. _Simple To-Do List_
+
+tasks = []
+while True:
+    print("1. Add task")
+    print("2. View tasks")
+    print("3. Exit")
+    choice = input("Enter your choice: ")
+    if choice == "1":
+        task = input("Enter task: ")
+        tasks.append(task)
+    elif choice == "2":
+        print("Tasks:")
+        for task in tasks:
+            print(task)
+    elif choice == "3":
+        break
+
+                
