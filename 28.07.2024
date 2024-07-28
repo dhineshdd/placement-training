@@ -1,0 +1,71 @@
+
+
+1. _Print Numbers_
+
+for i in range(1, 11):
+    print(i)
+
+
+2. _Print Squares_
+
+for i in range(1, 11):
+    print(i ** 2)
+
+
+3._Print Fibonacci Series_
+
+a, b = 0, 1
+for i in range(10):
+    print(a)
+    a, b = b, a + b
+
+
+4. _Print Prime Numbers_
+
+for num in range(2, 20):
+    if all(num % i != 0 for i in range(2, num)):
+        print(num)
+
+
+5. _Print Multiplication Table_
+
+num = 5
+for i in range(1, 11):
+    print(num * i)
+
+
+6. _Print Reverse Numbers_
+
+for i in range(10, 0, -1):
+    print(i)
+
+
+7. _Print Even Numbers_
+
+for i in range(1, 11):
+    if i % 2 == 0:
+        print(i)
+
+
+8. _Print Odd Numbers_
+
+for i in range(1, 11):
+    if i % 2 != 0:
+        print(i)
+
+
+9. _Print Sum of Numbers_
+
+sum = 0
+for i in range(1, 11):
+    sum += i
+print(sum)
+
+
+10. _Print Factorial_
+
+num = 5
+fact = 1
+for i in range(1, num + 1):
+    fact *= i
+print(fact)
