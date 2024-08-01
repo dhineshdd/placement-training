@@ -1,0 +1,24 @@
+1. Anagram Checkdef are_anagrams(s1, s2):
+    return sorted(s1) == sorted(s2)
+
+s1, s2 = "listen", "silent"
+print(are_anagrams(s1, s2))
+2. GCD (Greatest Common Divisor)def gcd(a, b):
+    while b:
+        a, b = b, a % b
+    return a
+
+a, b = 48, 18
+print(gcd(a, b))
+3. List Comprehension: Squares of Even Numberssquares = [x**2 for x in range(1, 11) if x % 2 == 0]
+print(squares)
+4. Flatten a Nested Listdef flatten(lst):
+    return [item for sublist in lst for item in sublist]
+
+nested_list = [[1, 2, 3], [4, 5], [6, 7, 8]]
+print(flatten(nested_list))
+5. Count Vowels in a Stringdef count_vowels(s):
+    return sum(1 for char in s.lower() if char in 'aeiou')
+
+s = "Hello World"
+print(count_vowels(s))
